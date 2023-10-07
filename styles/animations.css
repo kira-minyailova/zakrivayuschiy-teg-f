@@ -12,3 +12,22 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.theme__menu-button {
+    transition: width 0.3s ease;
+}
+
+
+/* .theme-menu__button:hover, 
+.theme-menu__button:disabled {
+    transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:disabled::before {
+    position: absolute;
+    content: "▶";
+    font-size: 14px;
+    transform: translateX(-150%);
+    animation: slide1 1s ease-in-out infinite;
+  } */
+  

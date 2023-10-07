@@ -1,1 +1,24 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+
+:root {
+    --max-width: 696px;
+    --main-font-family: 'Inter-Variable', sans-serif;
+    --accent-font-family: 'PressStart2P-Regular', sans-serif;
+    --wdth: 100;
+    --wgth: 400;
+    --themes-main-color: #000;
+    --themes-background: #FFF;
+    --font-size: 18px;
+    --background-color: #d3d3d3;
+    --color-for-strip: #d3d3d3;
+    --color-for-another-strip: transparent;
+    --text-stroke-light-theme: #fff;
+}
+
+/* .text_width_large {
+    --wdth: 151;
+}
+
+.text_weight_bold {
+    --wgth: 900;
+} */
