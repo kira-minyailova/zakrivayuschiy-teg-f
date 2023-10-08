@@ -90,19 +90,35 @@
   cursor: pointer;
   text-transform: uppercase;
   font-family: var(--accent-font-family);
-  transform: translateX(3px);
-  transform: scaleX(0);
+  padding: 0;
+  transition: opacity 0.3s ease;
 }
 
-.theme-menu__button:disabled::before {
+.theme-menu__button::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  transform-origin: left;
+  width: 100%;
+  height: 2px;
+  background-color: red; /* Не забудь поменять :) */
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.theme-menu__button:disabled::before { /* Возможно так нужно по заданию, но я бы стилизовал не :disabled, а добавил бы доп класс. Например, active */
   position: absolute;
   content: '▶';
   bottom: 0;
-  left: -14px;
+  left: 0;
   transform-origin: left;
-  width: 0%;
-  height: 2px;
   background-color: var(--main-text-color);
+  animation-name: arrow-motion;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .theme-menu__button:disabled {
@@ -114,27 +130,13 @@
   color: var(--main-text-color);
 }
 
-.theme-menu__button::after:focus-visible {
-  content: "";
-  position: absolute;
-  bottom: 1;
-  left: 2;
-  transform-origin: left;
-  width: 0%;
-  height: 2px;
-  background-color: var(--main-text-color);
+.theme-menu__button:focus-visible::after {
   transform: scaleX(1);
-}
-
-.theme-menu__button::after:focus-visible {
-  animation: width 0.3s ease;
 }
 
 .theme-menu__button:focus {
   outline: none;
   opacity: 0.6;
-  color: var(--main-text-color);
-  transform: scaleX(0);
 }
 
 .main {
