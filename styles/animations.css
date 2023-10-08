@@ -30,4 +30,13 @@
     transform: translateX(-150%);
     animation: slide1 1s ease-in-out infinite;
   } */
+
+@keyframes arrow-motion {
+    from {
+        transform: translateX(-20px);
+    }
+    to {
+        transform: translateX(-16px);
+    }
+}
   
