@@ -2,23 +2,30 @@
 
 :root {
     --max-width: 696px;
+    --header-height: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
     --main-font-family: 'Inter-Variable', sans-serif;
-    --accent-font-family: 'PressStart2P-Regular', sans-serif;
+    --accent-font-family: 'PressStart2P-Regular', fantasy;
     --wdth: 100;
     --wgth: 400;
-    --themes-main-color: #000;
-    --themes-background: #FFF;
     --font-size: 18px;
-    --background-color: #d3d3d3;
-    --color-for-strip: #d3d3d3;
-    --color-for-another-strip: transparent;
-    --text-stroke-light-theme: #fff;
+    --themes-main-color: #000;
+    --themes-main-color-svg: #ffffff;
+    --themes-background: #FFF;
+    --text-color-hover: #fff;
+    --bg-image: repeating-linear-gradient(to right, #d3d3d3 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
+    linear-gradient(to bottom, #e7e7e7, #1a1a1a);
+    --label-color: #fff;
+    --heart-body-color: #FF0000;
+    --heart-contur-color: #000;
+    --heart-core-color: #fff;
+    --heart-lights-color: #FF0000;
+    --background-color-dialog: #fff;
+    --background-color-button: #fff;
+    --heart-nentral: #ffffff;
+    --bg-for-arrow: #fff;
 }
-
-/* .text_width_large {
-    --wdth: 151;
+ 
+::backdrop {
+    --color-backdrop: rgba(0, 0, 0, 0.7);
 }
-
-.text_weight_bold {
-    --wgth: 900;
-} */
