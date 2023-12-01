@@ -19,9 +19,10 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   margin: 100px auto 105px;
-  font-variation-settings: 'wdth' var(--wdth), 'wgth' var(--wgth);
+  /* font-variation-settings: 'wdth' var(--wdth), 'wgth' var(--wgth); */
   font-family: var(--main-font-family);
   font-size: var(--font-size);
+  font-variation-settings: "wght" var(--wdth);
 
   background-image: var(--bg-image);
   /* background-image:
@@ -267,10 +268,6 @@
   line-height: 90%;
 }
 
-.card__icon-button {
-  padding: 10px 12px 5px 0;
-}
-
 .card__like-button {
   display: flex;
   width: 130px;
@@ -401,7 +398,7 @@
   z-index: 1;
 }
 
-.card__floppy-button:hover .button__text{
+.card__floppy-button:hover .button__text {
   color: var(--text-color-hover);
 }
 
@@ -444,7 +441,7 @@
 
 .dialog-body {
   max-inline-size: 357px;
-  position: fixed; 
+  position: fixed;
   width: 100%;
   display: flex;
   gap: 30px;

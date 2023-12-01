@@ -21,10 +21,6 @@
     animation: scaleHeart 0.3s ease-in 0.1s 1;
 }
 
-.like-icon.is-liked .like-icon__counter {
-    fill: var(--heart-body-color);
-}
-
 @keyframes arrow-motion {
     from {
         transform: translateX(-20px);
