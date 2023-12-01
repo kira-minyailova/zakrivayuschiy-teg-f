@@ -6,7 +6,8 @@
     --main-font-family: 'Inter-Variable', sans-serif;
     --accent-font-family: 'PressStart2P-Regular', fantasy;
     --wdth: 785;
-    --wght: 400;
+    --wght-text: 400;
+    --wght-title: 700;
     --font-size: 18px;
     --themes-main-color: #000;
     --themes-main-color-svg: #ffffff;
