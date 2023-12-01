@@ -22,6 +22,7 @@
     --bg-for-arrow: #fff;
     --heart-nentral: #ffffff;
     --themes-main-color-svg: #ffffff;
+    --wght-text: 400;
 }
 
 :root.theme-dark {
@@ -38,6 +39,7 @@
     --bg-for-arrow: #000;
     --heart-nentral: #000000;
     --themes-main-color-svg: #00CC14;
+    --wght-text: 465;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -55,6 +57,7 @@
         --bg-for-arrow: #000;
         --heart-nentral: #000000;
         --themes-main-color-svg: #00CC14;
+        --wght-text: 465;
     }
       
 }
