@@ -14,12 +14,12 @@
 
 */
 
-@supports (font-variation-settings: normal) {
+/* @supports (font-variation-settings: normal) {
   .page {
     font-family: 'Inter-Variable';
     font-variation-settings: "wght" var(--wght-text) var(--wght);
   }
-}
+} */
 
 .page {
   min-inline-size: 320px;
