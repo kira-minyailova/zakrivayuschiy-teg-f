@@ -23,6 +23,7 @@
     --heart-nentral: #ffffff;
     --themes-main-color-svg: #ffffff;
     --wght-text: 400;
+    --wght-title: 700;
 }
 
 :root.theme-dark {
@@ -40,6 +41,7 @@
     --heart-nentral: #000000;
     --themes-main-color-svg: #00CC14;
     --wght-text: 465;
+    --wght-title: 785;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,6 +60,7 @@
         --heart-nentral: #000000;
         --themes-main-color-svg: #00CC14;
         --wght-text: 465;
+        --wght-title: 785;
     }
       
 }

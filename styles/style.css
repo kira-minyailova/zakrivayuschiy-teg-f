@@ -15,9 +15,9 @@
 */
 
 @supports (font-variation-settings: normal) {
-  body {
+  .page {
     font-family: 'Inter-Variable';
-    font-weight: 400 785;
+    font-weight: var(--wght-text) var(--wght);
   }
 }
 
@@ -60,7 +60,7 @@
   font-weight: 400;
   /* margin-block-end: 20px; */
   margin: 136px 0 20px 0;
-  font-variation-settings: "wght" var(--wght);
+  font-variation-settings: "wght" var(--wght-text);
 }
 
 .header__subtitle {
@@ -71,7 +71,7 @@
   /* font-size: clamp(0.875rem, 0.5889rem + 1.2207vw, 1.6875rem); */
   font-weight: 400;
   margin-block-end: 25px;
-  font-variation-settings: "wght" var(--wght);
+  font-variation-settings: "wght" var(--wght-text);
 }
 
 .theme-menu__list {
@@ -232,16 +232,16 @@
 }
 
 .card__text .card__text-wrap {
-  color: var(--themes-main-color, #000);
   font-size: 18px;
   font-weight: 400;
   line-height: 116.667%;
   font-family: var(--main-font-family);
-  font-variation-settings: "wght" var(--wght-text);
 }
 
 .card__text {
   margin: 24px 25px;
+  font-variation-settings: "wght" var(--wght-text);
+  color: var(--themes-main-color, #000);
 }
 
 .card__text-limited {
@@ -250,6 +250,7 @@
 
 .card__text-wrap {
   color: var(--themes-main-color, #000);
+  font-variation-settings: "wght" var(--wght-text);
   margin-inline-start: 25px;
   margin-block-end: 18px;
 }
@@ -538,12 +539,6 @@
   .card__text-limited {
     min-inline-size: 319px;
   }
-
-  .card__img {
-    max-inline-size: 371px;
-    max-block-size: 371px;
-  }
-
 }
 
 @media(max-width: 377px) {
@@ -574,6 +569,11 @@
   .button-like-box {
     padding-top: 17px;
     margin-inline-end: 15px;
+  }
+
+  .card__img {
+    max-inline-size: 371px;
+    max-block-size: 371px;
   }
 
   .svg {
