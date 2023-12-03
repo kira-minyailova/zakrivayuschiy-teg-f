@@ -17,7 +17,7 @@
 @supports (font-variation-settings: normal) {
   .page {
     font-family: 'Inter-Variable';
-    font-weight: var(--wght-text) var(--wght);
+    font-variation-settings: "wght" var(--wght-text) var(--wght);
   }
 }
 
