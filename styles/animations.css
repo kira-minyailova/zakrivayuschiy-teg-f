@@ -66,14 +66,17 @@
 
 .like-icon__core {
     transition: fill 0.3s .03s linear;
+    fill: var( --heart-nentral);
 }
 
 .like-icon__body {
     transition: fill 0.3s linear;
+    fill: var(--heart-nentral);
 }
 
 .like-icon__counter {
     transition: fill 0.3s .06s linear;
+    fill: var(--heart-contur-color);
 }
 
 .card__icon-button:hover .like-icon__core {
@@ -114,7 +117,7 @@
     opacity: 0;
 }
 
-.like-icon__core {
+/* .like-icon__core {
     fill: var( --heart-nentral);
 }
   
@@ -124,7 +127,7 @@
   
 .like-icon__counter {
     fill: var(--heart-contur-color);
-}
+} */
 
 .like-icon__heart {
     transform-origin: 50%;

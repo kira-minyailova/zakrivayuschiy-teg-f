@@ -80,7 +80,8 @@
   transform: scaleX(0);
   border-bottom: solid 2px;
   transform-origin: 0;
-  transition: transform 0.3s linear;
+  /* transition: transform 0.3s linear; */
+  transition: width 0.3s ease;
 }
 
 .theme-menu__button:disabled::before {
@@ -119,14 +120,14 @@
   opacity: 0.6;
 }
 
-.theme-menu__button:hover,
+/* .theme-menu__button:hover,
 .theme-menu__button:disabled {
   transition: opacity 0.3s ease;
-}
+} */
 
-.theme-menu__button::after {
+/* .theme-menu__button::after {
   transition: width 0.3s ease;
-}
+} */
 
 /* MAIN */
 
@@ -311,22 +312,6 @@
   height: 100%;
 }
 
-.card__icon-button {
-  max-width: 38px;
-  width: 100%;
-  height: 100%;
-  max-height: 38px;
-  margin-inline-end: 8px;
-  cursor: pointer;
-  display: flex;
-  justify-content: end;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  transition: border 0.3s ease;
-  cursor: pointer;
-}
-
 .card__icon-button:focus {
   outline: none;
 }
@@ -340,8 +325,8 @@
 }
 
 .animation-btn:focus {
-  outline: none;
   box-shadow: 2px 2px 0px 0px var(--themes-main-color);
+  outline: none;
 }
 
 .animation-btn:focus-visible {
@@ -435,7 +420,7 @@ dialog::backdrop {
 
   .cards {
     gap: 50px;
-  }  
+  }
   
   .card {
     max-inline-size: var(--card-375px);
