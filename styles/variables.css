@@ -2,10 +2,10 @@
 
 :root {
     --max-width: 696px;
+    --card-375px: clamp(20rem, 0rem + 100vw, 23.438rem);
     --header-height: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
     --main-font-family: 'Inter-Variable', sans-serif;
-    --accent-font-family: 'PressStart2P-Regular', fantasy;
-    --wght: 785;
+    --accent-font-family: 'PressStart2P', fantasy;
     --wght-text: 400;
     --wght-title: 700;
     --font-size: 18px;
@@ -25,8 +25,5 @@
     --background-color-button: #fff;
     --heart-nentral: #ffffff;
     --bg-for-arrow: #fff;
-}
- 
-::backdrop {
-    --color-backdrop: rgba(0, 0, 0, 0.7);
+    --text-mix-blend: #fff;
 }

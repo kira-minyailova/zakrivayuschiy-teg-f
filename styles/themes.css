@@ -32,11 +32,11 @@
     --bg-image: repeating-linear-gradient(to right, #000 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
     linear-gradient(to bottom, #007f0c, #004306);
-    --label-color: #00CC14;
+    --label-color: #000;
     --heart-contur-color: #00CC14;
     --background-color-dialog: #000;
     --background-color-button: #000;
-    --text-color-hover: #000;
+    --text-color-hover: #00CC14;
     --bg-for-arrow: #000;
     --heart-nentral: #000000;
     --themes-main-color-svg: #00CC14;
@@ -51,16 +51,15 @@
         --bg-image: repeating-linear-gradient(to right, #000 0px 2px, transparent 2px 4px),
         repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
         linear-gradient(to bottom, #007f0c, #004306);
-        --label-color: #00CC14;
+        --label-color: #000;
         --heart-contur-color: #00CC14;
         --background-color-dialog: #000;
         --background-color-button: #000;
-        --text-color-hover: #000;
+        --text-color-hover: #00CC14;
         --bg-for-arrow: #000;
         --heart-nentral: #000000;
         --themes-main-color-svg: #00CC14;
         --wght-text: 465;
         --wght-title: 785;
     }
-      
 }
