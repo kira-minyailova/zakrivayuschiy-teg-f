@@ -411,9 +411,7 @@ dialog::backdrop {
   cursor: pointer;
 }
 
-/* МЕДИА-ЗАПРОСЫ */
-
-@media (max-width: 376px) { 
+@media (max-width: 376px) {
   .header__logo {
     margin: 120px 0 20px 0;
   }
