@@ -65,8 +65,8 @@
   font-size: 14px;
   text-transform: uppercase;
   /* transition: opacity 0.3s; */
+  transition: width 0.3s, opacity 0.3s ease;
   cursor: pointer;
-  transition: width 0.3s ease;
 }
 
 .theme-menu__button::after {
@@ -83,14 +83,13 @@
   inline-size: 0%;
   block-size: 2px;
   opacity: 0.6;
-  transition: none;
+  /* transition: none; */
 }
 
 .theme-menu__button:focus-visible::after {
   inline-size: 100%;
   transform: scaleX(1);
   background-color: var(--accent-color, #000);
-  transition: width 0.3s, opacity 0.3s ease;
 }
 
 .theme-menu__button:disabled::before {
@@ -121,7 +120,7 @@
 .theme-menu__button:hover,
 .theme-menu__button:focus-visible {
   opacity: 0.6;
-  transition: opacity 0.3s ease;
+  /* transition: opacity 0.3s ease; */
 }
 
 /* MAIN */
@@ -204,10 +203,13 @@
     0 -1px 0 var(--label-color);
 }
 
-@supports (text-stroke: 1px var(--label-color)) {
+@supports (
+  (text-stroke: 1px var(--label-color, #fff)) or
+    (-webkit-text-stroke: 1px var(--label-color, #fff))
+) {
   .label__text {
     text-shadow: none;
-    -webkit-text-stroke: 1px var(--label-color);
+    -webkit-text-stroke: 1px var(--label-color, #fff);
     text-stroke: 1px var(--label-color, #fff);
   }
 }
@@ -265,13 +267,14 @@
   background: var(--themes-background);
   position: relative;
   overflow: hidden;
+  transition: box-shadow 0.3s;
 }
 
 .animation-btn::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: var(--themes-main-color);
+  background-color: var(--text-color-hover);
   transition: transform 0.5s ease-in-out;
   transform: translateX(-100%);
   transform-origin: 0 0;
@@ -279,7 +282,7 @@
 }
 
 .button__text {
-  color: var(--themes-main-color);
+  color: var(--text-color-hover);
   font-family: var(--accent-font-family);
   font-size: 14px;
   line-height: 90%;
@@ -308,7 +311,6 @@
 
 .card__icon-button:focus-visible {
   border: 2px solid currentColor;
-  transition: border 0.3s ease;
 }
 
 .like-icon__heart {
@@ -413,7 +415,7 @@ dialog::backdrop {
   }
 
   .card__text {
-    inline-size: 317px;
+    min-inline-size: 317px;
   }
 
   .label__text {

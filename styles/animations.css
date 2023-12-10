@@ -59,8 +59,7 @@
 }
 
 .like-icon.is-liked .like-icon__heart {
-    /* animation: scale 0.3s ease-in 0.1s 1 alternate; */
-    transition: fill 0.3s 0.05s;
+    animation: scale 0.3s 0.3s ease-in alternate;
 }
 
 .like-icon__core {
@@ -79,32 +78,38 @@
 }
 
 .card__icon-button:hover .like-icon__core {
-    fill: var(--heart-contur-color);
+    fill: currentColor;
+    transition: fill 0.3s;
 }
 
 .card__icon-button:hover .like-icon__body {
     fill: var(--heart-contur-color);
-    transition-delay: 0.03s;
+    transition: fill 0.3s 0.05s;
 }
 
 .card__icon-button:active .like-icon__core {
     fill: var(--heart-body-color);
+    transition: fill 0.3s;
 }
 
 .card__icon-button:active .like-icon__body {
     fill: var(--heart-body-color);
+    transition: fill 0.3s 0.05s;
 }
 
 .like-icon.is-liked .like-icon__core {
     fill: var(--heart-body-color);
+    transition: fill 0.3s;
 }
 
 .like-icon.is-liked .like-icon__body {
     fill: var(--heart-body-color);
+    transition: fill 0.3s 0.05s;
 }
 
 .like-icon.is-liked .like-icon__counter {
     fill: var(--heart-body-color);
+    transition: fill 0.3s 0.06s;
 }
 
 .like-icon.is-liked .like-icon__lights {
