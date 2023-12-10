@@ -284,7 +284,6 @@
   font-size: 14px;
   line-height: 90%;
   mix-blend-mode: difference;
-  color: var(--text-color-hover);
 }
 
 .animation-btn .button__text {
