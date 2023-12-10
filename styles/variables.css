@@ -3,6 +3,7 @@
 :root {
     --max-width: 696px;
     --card-375px: clamp(20rem, 0rem + 100vw, 23.438rem);
+    --inline-size-card: clamp(23.438rem, 16.285rem + 30.517vw, 43.75rem);
     --header-height: clamp(20.438rem, 19.535rem + 3.85vw, 23rem);
     --main-font-family: 'Inter-Variable', sans-serif;
     --accent-font-family: 'PressStart2P', fantasy;

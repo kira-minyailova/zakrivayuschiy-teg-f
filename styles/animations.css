@@ -13,11 +13,6 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
-
-.like-icon.is-liked .like-icon__heart {
-    animation: scale 0.3s ease-in 0.1s 1 alternate;
-}
-
 @keyframes arrow-motion {
     from {
         transform: translateX(-20px);
@@ -63,19 +58,23 @@
     }
 }
 
+.like-icon.is-liked .like-icon__heart {
+    /* animation: scale 0.3s ease-in 0.1s 1 alternate; */
+    transition: fill 0.3s 0.05s;
+}
 
 .like-icon__core {
-    transition: fill 0.3s .03s linear;
+    transition: fill 0.3s 0.03s;
     fill: var( --heart-nentral);
 }
 
 .like-icon__body {
-    transition: fill 0.3s linear;
+    transition: fill 0.3s;
     fill: var(--heart-nentral);
 }
 
 .like-icon__counter {
-    transition: fill 0.3s .06s linear;
+    transition: fill 0.1s;
     fill: var(--heart-contur-color);
 }
 
@@ -116,18 +115,6 @@
     fill: var(--heart-lights-color);
     opacity: 0;
 }
-
-/* .like-icon__core {
-    fill: var( --heart-nentral);
-}
-  
-.like-icon__body {
-    fill: var(--heart-nentral);
-}
-  
-.like-icon__counter {
-    fill: var(--heart-contur-color);
-} */
 
 .like-icon__heart {
     transform-origin: 50%;

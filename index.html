@@ -76,7 +76,7 @@
           </div>
   
           <div class="button-like-box">
-            <button class="is-liked card__icon-button">
+            <button class="is-liked card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                 <g>
                   <path fill="var(--heart-contur-color)" class="like-icon__counter" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0
@@ -110,7 +110,7 @@
   
           <div class="text-content">
             <div class="card__text-container">
-              <p class="card__text card__text-limited">
+              <p class="card__text">
                 На первых этапах мы работали со страхами и сомнениями, которые 
                 часто испытывают новички. Один из них — страх перед чистым листом. 
                 Это, конечно же, намного сложнее, чем боязнь куска бумаги. Часто за этим ощущением скрываются более глубокие вопросы: с чего начать? 
@@ -124,7 +124,7 @@
           </div>
   
           <div class="button-like-box">
-            <button class="is-liked card__icon-button">
+            <button class="is-liked card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                 <g>
                   <path fill="var(--heart-contur-color)" class="like-icon__counter" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0
@@ -171,7 +171,7 @@
           </div>
   
           <div class="button-like-box">
-            <button class="is-liked card__icon-button">
+            <button class="is-liked card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                 <g>
                   <path fill="var(--heart-contur-color)" class="like-icon__counter" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0
@@ -220,7 +220,7 @@
           </div>
   
           <div class="button-like-box">
-            <button class="is-liked card__icon-button">
+            <button class="is-liked card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                 <g>
                   <path fill="var(--heart-contur-color)" class="like-icon__counter" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0
@@ -270,7 +270,7 @@
           </div>
   
           <div class="button-like-box">
-            <button class="is-liked card__icon-button">
+            <button class="is-liked card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                 <g>
                   <path fill="var(--heart-contur-color)" class="like-icon__counter" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0
@@ -317,7 +317,7 @@
           </div>
   
           <div class="button-like-box">
-            <button class="is-liked card__icon-button">
+            <button class="is-liked card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                 <g>
                   <path fill="var(--heart-contur-color)" class="like-icon__counter" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0
@@ -366,7 +366,7 @@
           </div>
   
           <div class="button-like-box">
-            <button class="is-liked card__icon-button">
+            <button class="is-liked card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                 <g>
                   <path fill="var(--heart-contur-color)" class="like-icon__counter" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0
@@ -417,7 +417,7 @@
           </div>
   
           <div class="button-like-box">
-            <button class="is-liked card__icon-button">
+            <button class="is-liked card__icon-button" type="button">
               <svg class="like-icon" xmlns="http://www.w3.org/2000/svg" width="39" height="36" fill="none">
                 <g>
                   <path fill="var(--heart-contur-color)" class="like-icon__counter" d="M12 6H9v3h3V6Zm3 0h-3v3h3V6ZM9 9H6v3h3V9Zm0
@@ -458,9 +458,11 @@
             Вставьте дискету, чтобы продолжить
           </p>
         </div>
-        <button class="dialog__button animation-btn" onclick="window['insert-floppy-disk'].close()">
-          <span class="button__text">ОК</span>
-        </button>
+        <form  class="dialog__form" method="dialog">
+          <button class="dialog__button animation-btn" onclick="window['insert-floppy-disk'].close()">
+            <span class="button__text">ОК</span>
+          </button>  
+        </form>
 
       </dialog>
     </main>
