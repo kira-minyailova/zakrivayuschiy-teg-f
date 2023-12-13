@@ -59,57 +59,57 @@
 }
 
 .like-icon.is-liked .like-icon__heart {
-    animation: scale 0.3s 0.3s ease-in alternate;
+    animation: scale 0.3s 0.1s ease-in alternate;
 }
 
 .like-icon__core {
-    transition: fill 0.3s 0.03s;
+    transition: fill 0.3s linear 0.03s;
     fill: var( --heart-nentral);
 }
 
 .like-icon__body {
-    transition: fill 0.3s;
+    transition: fill 0.3s linear;
     fill: var(--heart-nentral);
 }
 
 .like-icon__counter {
-    transition: fill 0.1s;
+    transition: fill 0.1s linear;
     fill: var(--heart-contur-color);
 }
 
 .card__icon-button:hover .like-icon__core {
     fill: currentColor;
-    transition: fill 0.3s;
+    transition: fill 0.3s linear;
 }
 
 .card__icon-button:hover .like-icon__body {
     fill: var(--heart-contur-color);
-    transition: fill 0.3s 0.05s;
+    transition: fill 0.3s linear 0.05s;
 }
 
 .card__icon-button:active .like-icon__core {
     fill: var(--heart-body-color);
-    transition: fill 0.3s;
+    transition: fill 0.3s linear;
 }
 
 .card__icon-button:active .like-icon__body {
     fill: var(--heart-body-color);
-    transition: fill 0.3s 0.05s;
+    transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .like-icon__core {
     fill: var(--heart-body-color);
-    transition: fill 0.3s;
+    transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .like-icon__body {
     fill: var(--heart-body-color);
-    transition: fill 0.3s 0.05s;
+    transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .like-icon__counter {
     fill: var(--heart-body-color);
-    transition: fill 0.3s 0.06s;
+    transition: fill 0.3s linear 0.06s;
 }
 
 .like-icon.is-liked .like-icon__lights {

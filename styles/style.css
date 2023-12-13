@@ -64,7 +64,6 @@
   padding: 0;
   font-size: 14px;
   text-transform: uppercase;
-  /* transition: opacity 0.3s; */
   transition: width 0.3s, opacity 0.3s ease;
   cursor: pointer;
 }
@@ -83,7 +82,7 @@
   inline-size: 0%;
   block-size: 2px;
   opacity: 0.6;
-  /* transition: none; */
+  transition: transform 0.3s ease-in-out;
 }
 
 .theme-menu__button:focus-visible::after {
@@ -120,7 +119,6 @@
 .theme-menu__button:hover,
 .theme-menu__button:focus-visible {
   opacity: 0.6;
-  /* transition: opacity 0.3s ease; */
 }
 
 /* MAIN */
